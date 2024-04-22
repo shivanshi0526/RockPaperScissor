@@ -1,0 +1,132 @@
+@use '../abstracts/breakpoints' as *;
+
+// Original 
+
+.animateSelect-original-rock-enter {
+    top: 50%;
+}
+
+.animateSelect-original-scissors-enter {
+    left: 60%;
+}
+
+.animateSelect-original-rock-enter-active {
+    top: -31.5%;
+    left: -57.5%;
+    transform: scale(109%);
+    transition: left 1000ms, top 1000ms, transform 1000ms;
+
+    @include dt {
+        top: 27%;
+        left: -142%;
+        transform: scale(156%);
+        transition: left 1000ms, top 1000ms, transform 1000ms;
+    }
+}
+
+.animateSelect-original-rock-enter-done {
+    top: -31.5%;
+    left: -57.5%;
+    transform: scale(109%);
+
+    @include dt {
+        top: 27%;
+        left: -142%;
+        transform: scale(156%);
+    }
+}
+
+.animateSelect-original-scissors-enter-active,
+.animateSelect-original-paper-enter-active {
+    top: -31.5%;
+    left: 1%;
+    transform: scale(109%);
+    transition: left 1000ms, top 1000ms, transform 1000ms;
+
+    @include dt {
+        top: 27%;
+        left: -52%;
+        transform: scale(156%);
+        transition: left 1000ms, top 1000ms, transform 1000ms;
+    }
+}
+
+.animateSelect-original-scissors-enter-done,
+.animateSelect-original-paper-enter-done {
+    top: -31.5%;
+    left: 1%;
+    transform: scale(109%);
+
+    @include dt {
+        transform: scale(156%);
+        top: 27%;
+        left: -52%;
+    }
+}
+
+// Bonus 
+
+.animateSelect-bonus-scissors-enter-active {
+    left: -58%;
+    transform: scale(133%);
+    transition: left 1000ms, transform 1000ms;
+
+    @include dt {
+        top: 43%;
+        left: -135%;
+        transform: scale(215%);
+        transition: left 1000ms, top 1000ms, transform 1000ms;
+    }
+}
+
+.animateSelect-bonus-scissors-enter-done {
+    left: -58%;
+    transform: scale(133%);
+
+    @include dt {
+        top: 43%;
+        left: -135%;
+        transform: scale(215%);
+        transition: left 1000ms, top 1000ms, transform 1000ms;
+    }
+}
+
+.animateSelect-bonus-paper-enter {
+    left: 65%;
+}
+
+.animateSelect-bonus-rock-enter {
+    left: 55%;
+}
+
+.animateSelect-bonus-rock-enter-active,
+.animateSelect-bonus-paper-enter-active,
+.animateSelect-bonus-spock-enter-active,
+.animateSelect-bonus-lizard-enter-active {
+    left: 5%;
+    top: -20%;
+    transform: scale(133%);
+    transition: left 1000ms, top 1000ms, transform 1000ms;
+
+    @include dt {
+        top: 43%;
+        left: -39%;
+        transform: scale(215%);
+        transition: left 1000ms, top 1000ms, transform 1000ms;
+    }
+}
+
+.animateSelect-bonus-rock-enter-done,
+.animateSelect-bonus-paper-enter-done,
+.animateSelect-bonus-spock-enter-done,
+.animateSelect-bonus-lizard-enter-done {
+    left: 5%;
+    top: -20%;
+    transform: scale(133%);
+
+    @include dt {
+        top: 43%;
+        left: -39%;
+        transform: scale(215%);
+    }
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Barlow-600;
+    src: url('/assets/fonts/Barlow_Semi_Condensed_600.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Barlow-700;
+    src: url('/assets/fonts/Barlow_Semi_Condensed_700.woff2');
+}
+
+.font-600 {
+    font-family: 'Barlow-600';
+}
+
+.font-700 {
+    font-family: 'Barlow-700';
+
+}

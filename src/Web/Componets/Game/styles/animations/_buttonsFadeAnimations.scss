@@ -1,0 +1,44 @@
+@use '../abstracts/breakpoints' as *;
+
+
+.buttonsFade-exit,
+.buttonsFade-appear {
+    @include dt {
+        opacity: 0;
+    }
+}
+
+.buttonsFade-exit-active,
+.buttonsFade-appear-active {
+    @include dt {
+        opacity: 1;
+        transition: opacity 1000ms;
+    }
+}
+
+.buttonsFade-exit-done,
+.buttonsFade-appear-done {
+    @include dt {
+        opacity: 1;
+    }
+}
+
+.buttonsFade-enter {
+    @include dt {
+        opacity: 1;
+    }
+}
+
+
+.buttonsFade-enter-active {
+    @include dt {
+        opacity: 0;
+        transition: opacity 1000ms;
+    }
+}
+
+.buttonsFade-enter-done {
+    @include dt {
+        opacity: 0;
+    }
+}

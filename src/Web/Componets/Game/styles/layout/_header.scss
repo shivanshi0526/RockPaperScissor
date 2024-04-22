@@ -1,0 +1,62 @@
+@use '../abstracts/colors.scss' as *;
+@use '../abstracts/breakpoints' as *;
+
+.headerContainer {
+    margin-block-start: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 44rem;
+    padding: .75rem;
+    width: 85%;
+    border: solid .2rem $header-outline;
+    border-radius: .5rem;
+
+    @include dt {
+        padding: 1.6rem 1.5rem 1.4rem 1.5rem;
+        border-radius: 1rem;
+    }
+
+    &_name {
+        margin-inline-start: .5rem;
+    }
+
+    &_scoreBoard {
+        width: 25%;
+        max-width: 9rem;
+        display: flex;
+        flex-direction: column;
+        padding-block: .5rem;
+        border-radius: .25rem;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+
+        @include dt {
+            border-radius: .5rem;
+            margin-block: -.25rem .25rem;
+        }
+
+        &_name {
+            color: $score-text;
+            font-size: clamp(0.5rem, 0.0333rem + 2.6667vw, 0.75rem);
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+
+            @include dt {
+                font-size: 1rem;
+            }
+        }
+
+        &_score {
+            line-height: 100%;
+            font-size: clamp(1.75rem, -0.5833rem + 13.3333vw, 3rem);
+            color: $header-outline;
+
+            @include dt {
+                font-size: 3.75rem;
+                letter-spacing: .2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.animateHeaderFade-appear,
+.revealContainerFade-appear {
+    opacity: 0;
+}
+
+.animateHeaderFade-appear-active,
+.revealContainerFade-appear-active {
+    opacity: 1;
+    transition: opacity 750ms;
+}
+
+.animateHeaderFade-appear-done,
+.revealContainerFade-appear-done {
+    opacity: 1;
+}

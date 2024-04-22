@@ -1,0 +1,158 @@
+@use '../abstracts/breakpoints' as *;
+@use '../abstracts/colors' as *;
+
+.chooseContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @include dt {
+        width: auto;
+        align-self: flex-end;
+    }
+
+    &_original {
+        font-size: clamp(0.7rem, 0.5798rem + 0.6867vw, 0.9rem);
+
+        @include dt {
+            font-size: 115%;
+        }
+    }
+
+    &_bonus {
+        // font size controls box-shadows of choice options
+        font-size: clamp(0.6rem, 0.57rem + 0.1717vw, 0.65rem);
+
+        @include dt {
+            font-size: .85rem;
+        }
+    }
+
+    &_bg {
+        width: 75%;
+
+        @include dt {
+            width: 100%;
+        }
+    }
+}
+
+.originalButton {
+    position: absolute;
+    width: 40%;
+
+    @include dt {
+        width: 62%;
+
+        &:focus-visible {
+            outline: thick solid orange;
+            outline-offset: -2em;
+        }
+    }
+
+    &_rock {
+        bottom: -20%;
+        left: 0%;
+        right: 0%;
+        margin-inline: auto;
+
+        @include dt {
+            top: 50%;
+        }
+    }
+
+    &_paper {
+        top: -20%;
+        left: 0;
+
+        @include dt {
+            top: -31%;
+            left: -26%;
+        }
+    }
+
+    &_scissors {
+        top: -20%;
+        right: 0%;
+
+        @include dt {
+            top: -31%;
+            left: 66%;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.bonusButton {
+    position: absolute;
+    width: 32%;
+
+    @include dt {
+        width: 42.75%;
+
+        &:focus-visible {
+            outline: thick solid orange;
+            outline-offset: -2em;
+        }
+    }
+
+    &_rock {
+        top: 80%;
+        right: 10%;
+
+        @include dt {
+            top: 75%;
+            right: 0%;
+        }
+    }
+
+    &_paper {
+        top: 20%;
+        right: 0%;
+
+        @include dt {
+            top: 15%;
+            right: -20%;
+        }
+    }
+
+    &_scissors {
+        top: -20%;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+
+        @include dt {
+            top: -20%;
+        }
+    }
+
+    &_spock {
+        top: 20%;
+        left: 0%;
+
+        @include dt {
+            top: 15%;
+            left: -20%;
+        }
+    }
+
+    &_lizard {
+        top: 80%;
+        left: 10%;
+
+        @include dt {
+            top: 75%;
+            left: 0%;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

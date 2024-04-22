@@ -1,0 +1,30 @@
+@use '../abstracts/breakpoints' as *;
+
+.animate-enter {
+    opacity: 0;
+}
+
+.animate-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+.playerSlideAnimate-enter {
+    @include dt {
+        transform: translatex(30%)
+    }
+}
+
+.houseSlideAnimate-enter {
+    transform: translateX(0%);
+
+    @include dt {
+        transform: translatex(-30%)
+    }
+}
+
+.playerSlideAnimate-enter-active,
+.houseSlideAnimate-enter-active {
+    transform: translatex(0%);
+    transition: transform 1000ms;
+}

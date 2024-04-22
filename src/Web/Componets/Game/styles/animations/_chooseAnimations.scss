@@ -1,0 +1,58 @@
+.animateChoose-exit-done,
+.animateChoose-enter-done,
+.animateChoose-exit {
+    transform: translateX(0%);
+}
+
+.animateChoose-enter-done,
+.animateChoose-exit {
+    opacity: 1;
+}
+
+.animateChoose-exit-done {
+    opacity: 0;
+}
+
+.animateChoose-exit-active {
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: transform 500ms,
+        opacity 500ms;
+}
+
+.animateChoose-enter {
+    transform: translateX(-100vw);
+    opacity: 0;
+}
+
+.animateChoose-enter-active {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: transform 500ms, opacity 500ms;
+}
+
+.animateChoose-appear {
+    opacity: 0;
+}
+
+.animateChoose-appear-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.animateChoose-appear-done {
+    opacity: 1;
+}
+
+.animateChooseFade-enter {
+    opacity: 1;
+}
+
+.animateChooseFade-enter-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.animateChooseFade-enter-done {
+    opacity: 0;
+}

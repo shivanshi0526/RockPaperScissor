@@ -1,0 +1,60 @@
+.shadowGroup {
+    position: relative;
+    z-index: -2;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadowAnimateOne-appear,
+.shadowAnimateTwo-appear,
+.shadowAnimateThree-appear {
+    position: absolute;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 100%;
+}
+
+.shadowAnimateOne-appear-active {
+    background-color: hsla(220, 47%, 23%, .25);
+    width: 325%;
+    transition: width 250ms ease-out 1000ms;
+}
+
+.shadowAnimateOne-appear-done {
+    background-color: hsla(220, 47%, 23%, .25);
+    width: 325%;
+}
+
+.shadowAnimateTwo-appear-active {
+    background-color: hsla(220, 47%, 23%, .5);
+    width: 250%;
+    transition: width 250ms ease-out 1000ms;
+}
+
+.shadowAnimateTwo-appear-done {
+    background-color: hsla(220, 47%, 23%, .5);
+    width: 250%;
+}
+
+.shadowAnimateThree-appear-active {
+    background-color: hsla(220, 47%, 23%);
+    width: 190%;
+    transition: width 250ms ease-out 1000ms;
+}
+
+.shadowAnimateThree-appear-done {
+    background-color: hsla(220, 47%, 23%);
+    width: 190%;
+}
+
+.shadowAnimateOne-appear-done,
+.shadowAnimateTwo-appear-done,
+.shadowAnimateThree-appear-done {
+    position: absolute;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
