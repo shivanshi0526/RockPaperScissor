@@ -2,6 +2,7 @@ import React from 'react'
 import Auth from '../Login';
 import { useNavigate } from "react-router-dom";
 
+
 export default function Login({user,sendGameRequest,gameRequests,playerAvailable,setUser,gameData,acceptGameRequest}) {
   const navigate = useNavigate()
   return (

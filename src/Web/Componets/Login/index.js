@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./login.css"
 
 export default function Auth({ setUser }) {
   const [userName, setUserName] = useState("");
